@@ -3,9 +3,8 @@ version: '3'
 services:
   server:
     tty: true
-    build:
-      context: server
-    ports:
+    build: .
+     ports:
       - "9292:9292"
 
   database:
